@@ -34,6 +34,16 @@ public class User {
         User user4 = new User("Nikolay", "NikolayBag@yandex.ru", "4444dddd", 30);
         return new User[]{user1, user2, user3, user4};
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
 
 

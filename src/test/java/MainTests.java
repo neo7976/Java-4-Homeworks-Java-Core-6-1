@@ -9,8 +9,9 @@ public class MainTests {
         sut = new Main();
 
     }
+
     @BeforeAll
-    public static void started (){
+    public static void started() {
         System.out.println("tests started");
     }
 
@@ -22,12 +23,32 @@ public class MainTests {
     }
 
     @AfterAll
-    public static void finishedAll (){
+    public static void finishedAll() {
         System.out.println("tests completed");
     }
 
 
     @Test
-    void name() {
+    public void testGetUserByLoginAndPassword() throws UserNotFoundException {
+        //arrange
+        String login = "dimaBag@yandex.ru";
+        String password = "1111aaaa";
+        User expected = new User("Dima", "dimaBag@yandex.ru", "1111aaaa", 18);
+
+        //act
+        User result = sut.getUserByLoginAndPassword(login, password);
+
+        //
+
+        Assertions.assertEquals(expected.getLogin(),result.getLogin());
+        Assertions.assertEquals(expected.getPassword(),result.getPassword());
+
     }
+
+    @Test
+    public void validateUser() {
+
+    }
+
+
 }
