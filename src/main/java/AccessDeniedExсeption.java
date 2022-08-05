@@ -1,4 +1,4 @@
-public class AccessDeniedExсeption extends Exception{
+ class AccessDeniedExсeption extends Exception{
     public AccessDeniedExсeption(String message) {
         super(message);
     }
