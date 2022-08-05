@@ -30,13 +30,13 @@ public class PlayerTests {
     @Test
     public void testShotWithWeapon() {
         //arrange
-        int slot = 1;
-        String weaponStr = "Пив-Пав";
+        int slot = 0;
+        String expected = "Пив-Пав";
 
         //act
-        String result = sut.shotWithWeapon(1);
+        String result = sut.shotWithWeapon(slot);
         //assert
-
+        Assertions.assertEquals(expected, result);
     }
 
 }

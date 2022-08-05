@@ -18,6 +18,7 @@ public class Player {
     }
 
     public String shotWithWeapon(int slot) {
+        String s = "";
         while (true) {
             // TODO проверить на выход за границы
             if (slot > (getSlotsCount()) - 1 || slot < 0) {
@@ -27,10 +28,10 @@ public class Player {
             // Получаем оружие из выбранного слота
             Weapon weapon = weaponSlots[slot];
             //Огонь!
-            weapon.shot();
+            s = weapon.shot();
             break;
         }
-        return null;
+        return s;
     }
 
 }
