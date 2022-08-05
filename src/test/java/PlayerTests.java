@@ -1,7 +1,4 @@
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.*;
 
 public class PlayerTests {
     Player sut;
@@ -12,8 +9,9 @@ public class PlayerTests {
         sut = new Player();
 
     }
+
     @BeforeAll
-    public static void started (){
+    public static void started() {
         System.out.println("tests started");
     }
 
@@ -25,8 +23,20 @@ public class PlayerTests {
     }
 
     @AfterAll
-    public static void finishedAll (){
+    public static void finishedAll() {
         System.out.println("tests completed");
+    }
+
+    @Test
+    public void testShotWithWeapon() {
+        //arrange
+        int slot = 1;
+        String weaponStr = "Пив-Пав";
+
+        //act
+        String result = sut.shotWithWeapon(1);
+        //assert
+
     }
 
 }

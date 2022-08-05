@@ -1,7 +1,9 @@
 package weapon;
 
 public class Weapon {
-    public void shot() {
+    public String shot() {
         // TODO override me!
+        String shot = null;
+        return shot;
     }
 }

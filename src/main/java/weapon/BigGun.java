@@ -2,7 +2,9 @@ package weapon;
 
 public class BigGun extends Weapon {
     @Override
-    public void shot() {
-        System.out.println("Пив-Пав");
+    public String shot() {
+        String shot = "Пив-Пав";
+        System.out.println(shot);
+        return shot;
     }
 }

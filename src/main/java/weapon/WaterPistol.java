@@ -2,7 +2,9 @@ package weapon;
 
 public class WaterPistol extends Weapon {
     @Override
-    public void shot() {
-        System.out.println("Струя");
+    public String shot() {
+        String shot = "Струя";
+        System.out.println(shot);
+        return shot;
     }
 }

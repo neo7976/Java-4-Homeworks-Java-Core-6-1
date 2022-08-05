@@ -17,7 +17,7 @@ public class Player {
         return weaponSlots.length;
     }
 
-    public void shotWithWeapon(int slot) {
+    public String shotWithWeapon(int slot) {
         while (true) {
             // TODO проверить на выход за границы
             if (slot > (getSlotsCount()) - 1 || slot < 0) {
@@ -30,6 +30,7 @@ public class Player {
             weapon.shot();
             break;
         }
+        return null;
     }
 
 }

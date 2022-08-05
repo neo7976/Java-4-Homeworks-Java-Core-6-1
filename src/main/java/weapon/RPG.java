@@ -2,7 +2,9 @@ package weapon;
 
 public class RPG extends Weapon {
     @Override
-    public void shot() {
-        System.out.println("Бум..Бум..БУБУМ");
+    public String shot() {
+        String shot = "Бум..Бум..БУБУМ";
+        System.out.println(shot);
+        return shot;
     }
 }

@@ -2,7 +2,9 @@ package weapon;
 
 public class Slingshot extends Weapon {
     @Override
-    public void shot() {
-        System.out.println("Бэууууу...");
+    public String shot() {
+        String shot = "Бэууууу...";
+        System.out.println(shot);
+        return shot;
     }
 }
