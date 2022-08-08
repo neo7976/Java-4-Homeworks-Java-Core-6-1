@@ -1,9 +1,13 @@
 package taskFirst;
 
+import org.hamcrest.MatcherAssert;
+import static org.hamcrest.Matchers.*;
 import org.junit.jupiter.api.*;
 import taskFirst.weapon.BigGun;
 import taskFirst.weapon.RPG;
+import taskFirst.weapon.WaterPistol;
 import taskFirst.weapon.Weapon;
+
 
 public class PlayerTests {
     Player player;
@@ -35,10 +39,10 @@ public class PlayerTests {
     @Test
     public void testShotWithWeapon() {
 
-           player.setWeaponSlots(new Weapon[]{
-                   new RPG(),
-                   new BigGun()
-           });
+        player.setWeaponSlots(new Weapon[]{
+                new RPG(),
+                new BigGun()
+        });
 
         //arrange
         int slot = 1;
@@ -48,6 +52,22 @@ public class PlayerTests {
         String result = player.shotWithWeapon(slot);
         //assert
         Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    public void testShotWithWeaponHamcrest() {
+        player.setWeaponSlots(new Weapon[]{
+                new RPG(),
+                new BigGun()
+        });
+
+        //arrange
+        int slot = 1;
+        String expected = "ПИВ-ПАВ";
+
+        //act
+        String result = player.shotWithWeapon(slot);
+        MatcherAssert.assertThat(expected, equalToIgnoringCase(result));
     }
 
     @Test
@@ -62,7 +82,23 @@ public class PlayerTests {
         int expected = 2;
 
         int result = player1.getSlotsCount();
+
         Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void getSlotsCountHamcrest() {
+        Player player1 = new Player();
+        player1.setWeaponSlots(new Weapon[]{
+                        new BigGun(),
+                        new RPG(),
+                        new WaterPistol()
+                }
+        );
+        int result = player1.getSlotsCount();
+
+        MatcherAssert.assertThat(result, is(equalTo(3)));
 
     }
+
 }
