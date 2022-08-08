@@ -38,22 +38,17 @@ public class MainTests {
         //arrange
         String login = "dimaBag@yandex.ru";
         String password = "1111aaaa";
-        User expected = new User("Dima", "dimaBag@yandex.ru", "1111aaaa", 18);
+        User expected = new User("Dimau", "dimaBag@yandex.ru", "1111aaaa", 18);
 
         //act
         User result = sut.getUserByLoginAndPassword(login, password);
 
         //
 
-        Assertions.assertEquals(expected.getLogin(),result.getLogin());
-        Assertions.assertEquals(expected.getPassword(),result.getPassword());
+        Assertions.assertEquals(expected, result);
 
     }
 
-    @Test
-    public void validateUser() {
-
-    }
 
 
 }
