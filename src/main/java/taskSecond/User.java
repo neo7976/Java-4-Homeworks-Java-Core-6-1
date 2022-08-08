@@ -1,3 +1,5 @@
+package taskSecond;
+
 public class User {
     private String name;
     private String login;
@@ -37,7 +39,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "taskSecond.User{" +
                 "name='" + name + '\'' +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +

@@ -1,3 +1,5 @@
+package taskSecond;
+
 import java.util.Scanner;
 
 public class Main {
@@ -25,7 +27,7 @@ public class Main {
             if (user.getLogin().equals(login) && user.getPassword().equals(password))
                 return user;
         }
-        throw new UserNotFoundException("User not Found");
+        throw new UserNotFoundException("taskSecond.User not Found");
     }
 
     public static void validateUser(User user) throws AccessDeniedExсeption {

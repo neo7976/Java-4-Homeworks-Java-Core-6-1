@@ -1,4 +1,9 @@
+package taskSecond;
+
 import org.junit.jupiter.api.*;
+import taskSecond.Main;
+import taskSecond.User;
+import taskSecond.UserNotFoundException;
 
 public class MainTests {
     Main sut;
