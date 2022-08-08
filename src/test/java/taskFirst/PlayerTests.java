@@ -34,19 +34,18 @@ public class PlayerTests {
 
     @Test
     public void testShotWithWeapon() {
-           Player player1 = new Player();
-           player1.setWeaponSlots(new Weapon[]{
+
+           player.setWeaponSlots(new Weapon[]{
                    new RPG(),
                    new BigGun()
            });
-
 
         //arrange
         int slot = 1;
         String expected = "Пив-Пав";
 
         //act
-        String result = player1.shotWithWeapon(slot);
+        String result = player.shotWithWeapon(slot);
         //assert
         Assertions.assertEquals(expected, result);
     }
@@ -66,5 +65,4 @@ public class PlayerTests {
         Assertions.assertEquals(expected, result);
 
     }
-
 }
