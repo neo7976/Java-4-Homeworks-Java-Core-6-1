@@ -1,9 +1,9 @@
-package weapon;
+package taskFirst.weapon;
 
-public class Gun extends Weapon {
+public class BigGun extends Weapon {
     @Override
     public String shot() {
-        String shot = "Пиу-пиу";
+        String shot = "Пив-Пав";
         System.out.println(shot);
         return shot;
     }

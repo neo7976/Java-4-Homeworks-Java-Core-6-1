@@ -1,4 +1,6 @@
-import weapon.*;
+package taskFirst;
+
+import taskFirst.weapon.*;
 
 public class Player {
     private Weapon[] weaponSlots;
@@ -11,6 +13,14 @@ public class Player {
                 new RPG(),
                 new Slingshot()
         };
+    }
+
+    public void setWeaponSlots(Weapon[] weaponSlots) {
+        this.weaponSlots = weaponSlots;
+    }
+
+    public Weapon[] getWeaponSlots() {
+        return weaponSlots;
     }
 
     public int getSlotsCount() {

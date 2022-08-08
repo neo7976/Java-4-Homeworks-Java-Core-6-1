@@ -1,4 +1,4 @@
-package weapon;
+package taskFirst.weapon;
 
 public class WaterPistol extends Weapon {
     @Override
