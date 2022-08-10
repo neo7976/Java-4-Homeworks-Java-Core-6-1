@@ -1,4 +1,4 @@
-package taskFirst.weapon;
+package weapon;
 
 public class Weapon {
     public String shot() {

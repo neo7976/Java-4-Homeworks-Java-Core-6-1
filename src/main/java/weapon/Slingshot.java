@@ -1,4 +1,4 @@
-package taskFirst.weapon;
+package weapon;
 
 public class Slingshot extends Weapon {
     @Override

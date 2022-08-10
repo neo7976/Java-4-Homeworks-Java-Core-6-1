@@ -1,12 +1,10 @@
-package taskFirst;
-
 import org.hamcrest.MatcherAssert;
 import static org.hamcrest.Matchers.*;
 import org.junit.jupiter.api.*;
-import taskFirst.weapon.BigGun;
-import taskFirst.weapon.RPG;
-import taskFirst.weapon.WaterPistol;
-import taskFirst.weapon.Weapon;
+import weapon.BigGun;
+import weapon.RPG;
+import weapon.WaterPistol;
+import weapon.Weapon;
 
 
 public class PlayerTests {

@@ -1,6 +1,9 @@
-package taskFirst;
-
-import taskFirst.weapon.*;
+import weapon.BigGun;
+import weapon.Gun;
+import weapon.RPG;
+import weapon.Slingshot;
+import weapon.WaterPistol;
+import weapon.Weapon;
 
 public class Player {
     private Weapon[] weaponSlots;

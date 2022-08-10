@@ -1,4 +1,4 @@
-package taskFirst.weapon;
+package weapon;
 
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
